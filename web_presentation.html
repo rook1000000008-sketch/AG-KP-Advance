@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การฟื้นฟูและยกระดับ ศบกต. ตำบลข่วงเปา</title>
+    <!-- Google Fonts: Sarabun -->
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome สำหรับไอคอน -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1b5e20;
+            --primary-dark: #0d3811;
+            --secondary: #2e7d32;
+            --accent: #f57f17;
+            --bg-light: #f4f6f3;
+            --text-dark: #2c3e50;
+            --card-bg: #ffffff;
+            --shadow: 0 10px 30px rgba(0,0,0,0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Sarabun', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header & Logos */
+        header {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            color: white;
+            padding: 20px 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .logo-img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+            background: white;
+            border-radius: 50%;
+            padding: 3px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+        }
+
+        .header-title h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .header-title p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .header-right {
+            text-align: right;
+        }
+
+        .badge-user {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        /* Main Container */
+        .main-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+            flex: 1;
+            width: 100%;
+        }
+
+        /* Navigation Tabs */
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            background: #ffffff;
+            border: 2px solid #ddd;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+        }
+
+        .tab-btn:hover {
+            border-color: var(--secondary);
+            color: var(--secondary);
+        }
+
+        .tab-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            box-shadow: 0 5px 15px rgba(27, 94, 32, 0.3);
+        }
+
+        /* Slide Sections */
+        .slide-section {
+            display: none;
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .slide-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .slide-header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .slide-header h2 {
+            font-size: 2rem;
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+        }
+
+        .slide-header p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        /* Content Grid */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+
+        .card-box {
+            background: #f9fbf9;
+            border-left: 5px solid var(--secondary);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+            transition: var(--transition);
+        }
+
+        .card-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        .card-box h3 {
+            color: var(--primary);
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card-box p, .card-box li {
+            font-size: 1rem;
+            color: #444;
+        }
+
+        .card-box ul {
+            padding-left: 20px;
+        }
+
+        /* Prompt Box for Image Generation */
+        .prompt-box {
+            background: #fff8e1;
+            border: 1px dashed #ffa000;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #5d4037;
+        }
+
+        .prompt-box strong {
+            color: #e65100;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Navigation Controls Bottom */
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .ctrl-btn {
+            background: var(--secondary);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .ctrl-btn:hover {
+            background: var(--primary-dark);
+        }
+
+        .ctrl-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #263238;
+            color: white;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .header-left {
+                flex-direction: column;
+            }
+            .header-right {
+                text-align: center;
+            }
+            .slide-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <div class="logo-container">
+                <!-- ตรา อบต.ข่วงเปา (ใช้ไฟล์ KPLOGO.jpg ตามจริงในโฟลเดอร์ D:\SBKT) -->
+                <img src="KPLOGO.jpg" alt="ตรา อบต.ข่วงเปา" class="logo-img" title="องค์การบริหารส่วนตำบลข่วงเปา">
+                <!-- ตรา ศบกต. (ใช้ไฟล์ sbkt.png ตามจริงในโฟลเดอร์ D:\SBKT) -->
+                <img src="sbkt.png" alt="ตรา ศบกต." class="logo-img" title="ศูนย์บริการและถ่ายทอดเทคโนโลยีการเกษตร">
+            </div>
+            <div class="header-title">
+                <h1>ระบบสนับสนุนการขับเคลื่อน ศบกต. ข่วงเปา</h1>
+                <p>องค์การบริหารส่วนตำบลข่วงเปา อำเภอจอมทอง จังหวัดเชียงใหม่</p>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="badge-user">
+                <i class="fa-solid fa-user-tie"></i> ผู้นำเสนอ: ปลัด อบต.ข่วงเปา
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <!-- Navigation Tabs -->
+        <div class="nav-tabs">
+            <button class="tab-btn active" onclick="switchSlide(0)"><i class="fa-solid fa-house-chimney"></i> 1. ความเป็นมา</button>
+            <button class="tab-btn" onclick="switchSlide(1)"><i class="fa-solid fa-compass-drafting"></i> 2. บทบาทและอำนาจหน้าที่</button>
+            <button class="tab-btn" onclick="switchSlide(2)"><i class="fa-solid fa-rocket"></i> 3. แผนฟื้นฟูภารกิจ</button>
+            <button class="tab-btn" onclick="switchSlide(3)"><i class="fa-solid fa-recycle"></i> 4. ก้าวสู่มิติการรักษาสิ่งแวดล้อม</button>
+        </div>
+
+        <!-- Slide 1: ความเป็นมาและการถ่ายโอนภารกิจ -->
+        <div class="slide-section active" id="slide-0">
+            <div class="slide-header">
+                <h2>ความเป็นมาของ ศบกต. และการเข้าสู่ภารกิจท้องถิ่น</h2>
+                <p>จากหน่วยงานส่วนภูมิภาค สู่การขับเคลื่อนเพื่อพี่น้องประชาชนตำบลข่วงเปา</p>
+            </div>
+            <div class="grid-2">
+                <div class="card-box">
+                    <h3><i class="fa-solid fa-landmark"></i> จุดเริ่มต้นระดับประเทศ</h3>
+                    <p>เดิมที ศบกต. (ศูนย์บริการและถ่ายทอดเทคโนโลยีการเกษตรประจำตำบล) เป็นหน่วยงานส่วนภูมิภาคสังกัดกระทรวงเกษตรและสหกรณ์ จัดตั้งขึ้นเพื่อให้เป็นจุดบริการและถ่ายทอดความรู้แบบเบ็ดเสร็จ (One Stop Service) ในระดับตำบล</p>
+                </div>
+                <div class="card-box">
+                    <h3><i class="fa-solid fa-file-contract"></i> การถ่ายโอนภารกิจสู่ อปท.</h3>
+                    <p>ตามแผนปฏิบัติการกระจายอำนาจฯ พ.ศ. 2542 กำหนดให้มีการถ่ายโอนภารกิจด้านการเกษตรให้แก่องค์กรปกครองส่วนท้องถิ่น (เทศบาล/อบต.) ตั้งแต่ช่วงปี พ.ศ. 2553 เป็นต้นมา เพื่อให้ท้องถิ่นดูแลและตอบสนองเกษตรกรได้ใกล้ชิดยิ่งขึ้น</p>
+                </div>
+            </div>
+            <div class="prompt-box">
+                <strong><i class="fa-solid fa-wand-magic-sparkles"></i> AI Prompt สำหรับสร้างภาพประกอบ Slide นี้ (นำไปใช้ใน Midjourney / DALL-E):</strong>
+                "A professional vector illustration of a modern agricultural center building in a lush green valley of Chom Thong Chiang Mai, professional government officers collaborating with local Thai farmers, bright daylight, corporate design style --ar 16:9"
+            </div>
+        </div>
+
+        <!-- Slide 2: บทบาทและอำนาจหน้าที่ -->
+        <div class="slide-section" id="slide-1">
+            <div class="slide-header">
+                <h2>อำนาจ หน้าที่ และบทบาทของ อบต. กับ ศบกต.</h2>
+                <p>กรอบการทำงานเชิงบูรณาการเพื่อพัฒนาเศรษฐกิจฐานราก</p>
+            </div>
+            <div class="grid-2">
+                <div class="card-box">
+                    <h3><i class="fa-solid fa-database"></i> ด้านข้อมูลและแผนงาน</h3>
+                    <ul>
+                        <li>จัดเก็บและปรับปรุงข้อมูลพื้นฐานด้านการเกษตรตำบลข่วงเปา</li>
+                        <li>จัดทำแผนพัฒนาการเกษตรระดับตำบลให้สอดคล้องกับแผนท้องถิ่น</li>
+                    </ul>
+                </div>
+                <div class="card-box">
+                    <h3><i class="fa-solid fa-chalkboard-user"></i> ด้านการบริการและความรู้</h3>
+                    <ul>
+                        <li>เป็นศูนย์กระจายข้อมูลข่าวสาร เตือนภัยพิบัติ และโรคพืช</li>
+                        <li>สนับสนุนพื้นที่จัดฝึกอบรมอาชีพและแปลงสาธิตทางการเกษตร</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="prompt-box">
+                <strong><i class="fa-solid fa-wand-magic-sparkles"></i> AI Prompt สำหรับสร้างภาพประกอบ Slide นี้:</strong>
+                "Infographic style illustration showing data management, agricultural training workshop, and community collaboration in a local government office in Thailand, modern clean flat design"
+            </div>
+        </div>
+
+        <!-- Slide 3: แผนฟื้นฟูเร่งด่วน -->
+        <div class="slide-section" id="slide-2">
+            <div class="slide-header">
+                <h2>แผนฟื้นฟูเร่งด่วน: คืนชีพ ศบกต. ข่วงเปา</h2>
+                <p>สร้างความเชื่อมั่น ป้องกันการสลายตัว และขับเคลื่อนให้เห็นผลจริง</p>
+            </div>
+            <div class="grid-2">
+                <div class="card-box">
+                    <h3><i class="fa-solid fa-users-gear"></i> 1. คืนชีวิตให้คณะกรรมการ</h3>
+                    <p>แต่งตั้งคำสั่งคณะกรรมการ ศบกต. ชุดใหม่ ดึงผู้นำชุมชน ปราชญ์ชาวบ้าน และนักส่งเสริมการเกษตรอำเภอเข้ามาร่วมขับเคลื่อนอย่างจริงจัง</p>
+                </div>
+                <div class="card-box">
+                    <h3><i class="fa-solid fa-bolt"></i> 2. ทำ Quick Win ให้เห็นผลไว</h3>
+                    <p>แก้ปัญหาเฉพาะหน้าเร่งด่วน เช่น จัดหาชีวภัณฑ์กำจัดศัตรูพืช หรือปรับปรุงพื้นที่ศูนย์ให้สะอาดน่าใช้ เพื่อเรียกความเชื่อมั่นจากชาวบ้านทันที</p>
+                </div>
+            </div>
+            <div class="prompt-box">
+                <strong><i class="fa-solid fa-wand-magic-sparkles"></i> AI Prompt สำหรับสร้างภาพประกอบ Slide นี้:</strong>
+                "A dynamic strategic planning meeting in a Thai local administrative office, senior local government officials and community leaders pointing at a project roadmap whiteboard, optimistic atmosphere"
+            </div>
+        </div>
+
+        <!-- Slide 4: มิติสิ่งแวดล้อมและขยะ -->
+        <div class="slide-section" id="slide-3">
+            <div class="slide-header">
+                <h2>ยกระดับสู่ "เกษตรสีเขียวและการจัดการขยะ"</h2>
+                <p>บูรณาการทรัพยากรธรรมชาติ ขยะอินทรีย์ และเกษตรกรรมเข้าด้วยกัน</p>
+            </div>
+            <div class="grid-2">
+                <div class="card-box">
+                    <h3><i class="fa-solid fa-recycle"></i> แปลงขยะอินทรีย์เป็นปุ๋ย</h3>
+                    <p>นำขยะอินทรีย์จากชุมชนและตลาดมาแปรรูปเป็นปุ๋ยหมักและน้ำหมักชีวภาพ แจกจ่ายให้เกษตรกร ลดภาระฝังกลบของ อบต.</p>
+                </div>
+                <div class="card-box">
+                    <h3><i class="fa-solid fa-leaf"></i> เกษตรปลอดการเผา</h3>
+                    <p>ถ่ายทอดเทคโนโลยีการไถกลบตอซังข้าวและแปรรูปวัสดุเหลือใช้ทางการเกษตร แก้ปัญหาหมอกควันและรักษาสิ่งแวดล้อมอย่างยั่งยืน</p>
+                </div>
+            </div>
+            <div class="prompt-box">
+                <strong><i class="fa-solid fa-wand-magic-sparkles"></i> AI Prompt สำหรับสร้างภาพประกอบ Slide นี้:</strong>
+                "Eco-friendly organic farming concept in northern Thailand, organic fertilizer production from organic waste, farmers smiling in a green field with mountains in the background, high quality photography"
+            </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="controls">
+            <button class="ctrl-btn" id="prevBtn" onclick="changeSlide(-1)" disabled><i class="fa-solid fa-arrow-left"></i> ก่อนหน้า</button>
+            <span id="slideIndicator" style="align-self: center; font-weight: 600; color: #555;">หน้า 1 จาก 4</span>
+            <button class="ctrl-btn" id="nextBtn" onclick="changeSlide(1)">ถัดไป <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 องค์การบริหารส่วนตำบลข่วงเปา อำเภอจอมทอง จังหวัดเชียงใหม่ | ระบบสนับสนุนการบริหารจัดการ ศบกต.</p>
+    </footer>
+
+    <!-- JavaScript for Slides -->
+    <script>
+        let currentSlide = 0;
+        const totalSlides = 4;
+
+        function showSlide(index) {
+            const sections = document.querySelectorAll('.slide-section');
+            const buttons = document.querySelectorAll('.tab-btn');
+
+            if (index >= totalSlides) currentSlide = totalSlides - 1;
+            else if (index < 0) currentSlide = 0;
+            else currentSlide = index;
+
+            sections.forEach((sec, idx) => {
+                sec.classList.toggle('active', idx === currentSlide);
+            });
+
+            buttons.forEach((btn, idx) => {
+                btn.classList.toggle('active', idx === currentSlide);
+            });
+
+            document.getElementById('slideIndicator').innerText = `หน้า ${currentSlide + 1} จาก ${totalSlides}`;
+            document.getElementById('prevBtn').disabled = currentSlide === 0;
+            document.getElementById('nextBtn').disabled = currentSlide === totalSlides - 1;
+        }
+
+        function switchSlide(index) {
+            showSlide(index);
+        }
+
+        function changeSlide(direction) {
+            showSlide(currentSlide + direction);
+        }
+    </script>
+
+</body>
+</html>

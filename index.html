@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบสารสนเทศและแผนงาน ศบกต.ข่วงเปา</title>
+    <!-- Google Fonts (Prompt) -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #27ae60;
+            --primary-dark: #219653;
+            --secondary-color: #2c3e50;
+            --bg-color: #f4f6f9;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Prompt', sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 35px;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 20px;
+        }
+        .logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 15px;
+        }
+        .logos img {
+            width: 85px;
+            height: 85px;
+            object-fit: contain;
+            border-radius: 50%;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            background: #fff;
+            padding: 3px;
+            border: 1px solid #ddd;
+        }
+        header h1 {
+            color: var(--secondary-color);
+            font-size: 24px;
+            margin-bottom: 6px;
+        }
+        header p {
+            color: #666;
+            font-size: 15px;
+        }
+        .section {
+            margin-bottom: 35px;
+        }
+        .section h2 {
+            font-size: 20px;
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .presentation-box {
+            text-align: center;
+            padding: 30px;
+            background: #e8f8f5;
+            border-radius: 8px;
+            border: 1px dashed var(--primary-color);
+        }
+        .file-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+        }
+        .file-card {
+            background: #f9fbfd;
+            border: 1px solid #e1e8ed;
+            padding: 18px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .file-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .file-card h4 {
+            font-size: 15px;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 18px;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            text-align: center;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: var(--primary-dark);
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 13px;
+            color: #888;
+            border-top: 1px solid #eaeaea;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <!-- ส่วนแสดงตราสัญลักษณ์ อบต.ข่วงเปา และ ศบกต. -->
+        <div class="logos">
+            <img src="./KPLOGO.jpg" alt="ตรา อบต.ข่วงเปา" title="องค์การบริหารส่วนตำบลข่วงเปา">
+            <img src="./sbkt.png" alt="ตรา ศบกต." title="ศูนย์บริการและถ่ายทอดเทคโนโลยีการเกษตรประจำตำบล">
+        </div>
+        <h1>ศูนย์บริการและถ่ายทอดเทคโนโลยีการเกษตรประจำตำบล (ศบกต.)</h1>
+        <p>องค์การบริหารส่วนตำบลข่วงเปา อำเภอจอมทอง จังหวัดเชียงใหม่</p>
+    </header>
+
+    <!-- ส่วนพรีวิวสไลด์นำเสนอ (ลิงก์ไปหน้าสไลด์เว็บ HTML ที่สวยงาม) -->
+    <div class="section">
+        <h2>📊 แผนปฏิบัติการและสไลด์นำเสนอ (Presentation Preview)</h2>
+        <p style="margin-bottom: 15px; font-size: 14px; color: #555;">คลิกปุ่มด้านล่างเพื่อเปิดสไลด์นำเสนอแผนปฏิบัติการ 30 วัน (รูปแบบเว็บเบราว์เซอร์ คมชัด ตัวหนังสือไม่เพี้ยน):</p>
+        
+        <div class="presentation-box">
+            <a href="./web_presentation.html" class="btn" target="_blank">
+                🖥️ เปิดสไลด์นำเสนอแบบเต็มจอ (Presentation Mode)
+            </a>
+        </div>
+    </div>
+
+    <!-- ส่วนคลังเอกสารและโครงการ -->
+    <div class="section">
+        <h2>📁 คลังเอกสารโครงการและบันทึกข้อความราชการ</h2>
+        <div class="file-list">
+            
+            <div class="file-card">
+                <h4>แผนปฏิบัติการขับเคลื่อน ศบกต. ยุคใหม่ 30 วัน</h4>
+                <a href="./แผนปฏิบัติการขับเคลื่อน ศบกต. ยุคใหม่ 30 วัน.pptx" class="btn" target="_blank">ดาวน์โหลดไฟล์ (.pptx)</a>
+            </div>
+
+            <div class="file-card">
+                <h4>บันทึก - แจ้งแนวทางการจัดทำและส่งรายงานผลการปฏิบัติงานประจำเดือน</h4>
+                <a href="./บันทึก - แจ้งแนวทางการจัดทำและส่งรายงานผลการปฏิบัติงานประจำเดือนของส่วนราชการ.docx" class="btn" target="_blank">ดาวน์โหลดไฟล์ (.docx)</a>
+            </div>
+
+            <div class="file-card">
+                <h4>บันทึก - นโยบายขับเคลื่อนภารกิจการเกษตร ศบกต.</h4>
+                <a href="./บันทึก - นโยบายขับเคลื่อนภารกิจการเกษตร ศบกต..docx" class="btn" target="_blank">ดาวน์โหลดไฟล์ (.docx)</a>
+            </div>
+
+            <div class="file-card">
+                <h4>แผนฟื้นฟู ศบกต. เชิงนวัตกรรม ปี 2570</h4>
+                <a href="./แผนฟื้นฟู ศบกต. เชิงนวัตกรรม ปีงบประมาณ 2570 ปรับปรุง.docx" class="btn" target="_blank">ดาวน์โหลดไฟล์ (.docx)</a>
+            </div>
+
+            <div class="file-card">
+                <h4>องค์ประกอบและโครงสร้างคณะกรรมการ ศบกต.</h4>
+                <a href="./องค์ประกอบของ ศบกต..docx" class="btn" target="_blank">ดาวน์โหลดไฟล์ (.docx)</a>
+            </div>
+
+            <div class="file-card">
+                <h4>โครงการจัดการขยะอินทรีย์และผลิตปุ๋ยหมักสั่งตัด (N-P-K)</h4>
+                <a href="./โครงการส่งเสริมการจัดการขยะอินทรีย์ต้นทางและการผลิตปุ๋ยหมักสั่งตัดเพื่อยกระดับธาตุอาหารพืช.docx" class="btn" target="_blank">ดาวน์โหลดไฟล์ (.docx)</a>
+            </div>
+
+            <div class="file-card">
+                <h4>ร่างโครงการฉบับสมบูรณ์ที่ตีกรอบภารกิจ ศบกต.ข่วงเปา</h4>
+                <a href="./ร่างโครงการฉบับสมบูรณ์ที่ตีกรอบภารกิจของ ศบกต.ข่วงเปา.docx" class="btn" target="_blank">ดาวน์โหลดไฟล์ (.docx)</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>ระบบสารสนเทศเพื่อการบริหารจัดการ ศบกต.ข่วงเปา | องค์การบริหารส่วนตำบลข่วงเปา อำเภอจอมทอง จังหวัดเชียงใหม่</p>
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>แผนปฏิบัติการขับเคลื่อน ศบกต. ข่วงเปายุคใหม่ (30 วัน)</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Sarabun', sans-serif;
+      background-color: #0f172a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    .slide-container {
+      width: 1280px;
+      height: 720px;
+      background: #ffffff;
+      color: #0f172a;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      border-radius: 12px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .nav-bar {
+      position: fixed;
+      bottom: 20px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(10px);
+      padding: 10px 20px;
+      border-radius: 30px;
+      color: white;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .nav-btn {
+      background: #10b981;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-family: 'Sarabun', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      transition: background 0.2s;
+    }
+    .nav-btn:hover { background: #059669; }
+    .slide-counter { font-size: 16px; font-weight: 600; color: #e2e8f0; }
+  </style>
+</head>
+<body>
+
+  <!-- SLIDE 1: TITLE SLIDE -->
+  <div class="slide-container" style="padding: 64px; justify-content: center; align-items: center; text-align: center; background: linear-gradient(135deg, #064e3b 0%, #022c22 100%); color: #ffffff;">
+    <div style="background: rgba(16, 185, 129, 0.2); padding: 12px 28px; border-radius: 50px; margin-bottom: 24px; border: 1px solid rgba(52, 211, 153, 0.4);">
+      <p style="font-size: 24px; font-weight: 600; color: #6ee7b7; letter-spacing: 1px; margin: 0;">
+        <i class="fa-solid fa-building-flag" style="margin-right: 10px;"></i>องค์การบริหารส่วนตำบลข่วงเปา
+      </p>
+    </div>
+    <h1 style="font-size: 58px; font-weight: 800; line-height: 1.25; margin: 0 0 24px 0; max-width: 1050px; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+      แผนปฏิบัติการขับเคลื่อน ศบกต. ยุคใหม่
+    </h1>
+    <p style="font-size: 30px; font-weight: 400; color: #a7f3d0; margin: 0 0 32px 0; max-width: 900px;">
+      การดำเนินงาน 4 ระยะหลัก (รวม 30 วันแรก) เพื่อการบริหารจัดการเชิงรุก
+    </p>
+    <div style="width: 120px; height: 6px; background: #10b981; border-radius: 3px;"></div>
+  </div>
+
+  <!-- SLIDE 2: OVERVIEW (4 PHASES SUMMARY) -->
+  <div class="slide-container" style="padding: 48px 64px; background: #f8fafc;">
+    <div style="border-bottom: 4px solid #059669; padding-bottom: 16px; margin-bottom: 40px;">
+      <h2 style="font-size: 40px; font-weight: 800; color: #065f46; margin: 0;">
+        ภาพรวมแผนปฏิบัติการ 4 ระยะ (30 วัน)
+      </h2>
+    </div>
+    
+    <div style="display: flex; gap: 20px; height: 480px; align-items: center;">
+      <!-- Phase 1 -->
+      <div style="flex: 1; background: #ffffff; border-radius: 16px; padding: 28px 20px; border-top: 8px solid #0284c7; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; flex-direction: column; height: 100%; justify-content: space-between;">
+        <div>
+          <div style="font-size: 20px; font-weight: 700; color: #0284c7; margin-bottom: 8px;">ระยะที่ 1 (วันที่ 1 - 7)</div>
+          <h3 style="font-size: 24px; font-weight: 700; color: #0f172a; margin-bottom: 16px; line-height: 1.3;">เตรียมความพร้อม & ตั้งหลัก</h3>
+          <p style="font-size: 20px; color: #475569; line-height: 1.5; margin: 0;">ประชุมเคลียร์บทบาทสำนักปลัด แต่งตั้งคณะทำงาน และประสานภาคีเครือข่าย</p>
+        </div>
+        <div style="background: #e0f2fe; padding: 12px; border-radius: 8px; text-align: center;">
+          <span style="font-size: 20px; font-weight: 700; color: #0369a1;">สัปดาห์ที่ 1</span>
+        </div>
+      </div>
+
+      <!-- Phase 2 -->
+      <div style="flex: 1; background: #ffffff; border-radius: 16px; padding: 28px 20px; border-top: 8px solid #059669; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; flex-direction: column; height: 100%; justify-content: space-between;">
+        <div>
+          <div style="font-size: 20px; font-weight: 700; color: #059669; margin-bottom: 8px;">ระยะที่ 2 (วันที่ 8 - 14)</div>
+          <h3 style="font-size: 24px; font-weight: 700; color: #0f172a; margin-bottom: 16px; line-height: 1.3;">วางระบบ & ดึงปราชญ์ชุมชน</h3>
+          <p style="font-size: 20px; color: #475569; line-height: 1.5; margin: 0;">ดึงพี่เลี้ยงชุมชน และออกแบบ 4 ภารกิจหลัก (ขยะอินทรีย์ อพ.สธ. ตลาดสีเขียว)</p>
+        </div>
+        <div style="background: #d1fae5; padding: 12px; border-radius: 8px; text-align: center;">
+          <span style="font-size: 20px; font-weight: 700; color: #047857;">สัปดาห์ที่ 2</span>
+        </div>
+      </div>
+
+      <!-- Phase 3 -->
+      <div style="flex: 1; background: #ffffff; border-radius: 16px; padding: 28px 20px; border-top: 8px solid #d97706; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; flex-direction: column; height: 100%; justify-content: space-between;">
+        <div>
+          <div style="font-size: 20px; font-weight: 700; color: #d97706; margin-bottom: 8px;">ระยะที่ 3 (วันที่ 15 - 21)</div>
+          <h3 style="font-size: 24px; font-weight: 700; color: #0f172a; margin-bottom: 16px; line-height: 1.3;">เปิดตัว & สร้างการมีส่วนร่วม</h3>
+          <p style="font-size: 20px; color: #475569; line-height: 1.5; margin: 0;">ประชาสัมพันธ์เชิงรุก เตรียมสถานที่ และซักซ้อมความพร้อมคณะทำงาน</p>
+        </div>
+        <div style="background: #fef3c7; padding: 12px; border-radius: 8px; text-align: center;">
+          <span style="font-size: 20px; font-weight: 700; color: #b45309;">สัปดาห์ที่ 3</span>
+        </div>
+      </div>
+
+      <!-- Phase 4 -->
+      <div style="flex: 1; background: #ffffff; border-radius: 16px; padding: 28px 20px; border-top: 8px solid #7c3aed; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; flex-direction: column; height: 100%; justify-content: space-between;">
+        <div>
+          <div style="font-size: 20px; font-weight: 700; color: #7c3aed; margin-bottom: 8px;">ระยะที่ 4 (วันที่ 22 - 30)</div>
+          <h3 style="font-size: 24px; font-weight: 700; color: #0f172a; margin-bottom: 16px; line-height: 1.3;">Kick-off & ประเมินผล</h3>
+          <p style="font-size: 20px; color: #475569; line-height: 1.5; margin: 0;">เปิดตัวโครงการ นำเสนอผลการทำงานประจำเดือน และถอดบทเรียน</p>
+        </div>
+        <div style="background: #ede9fe; padding: 12px; border-radius: 8px; text-align: center;">
+          <span style="font-size: 20px; font-weight: 700; color: #6d28d9;">สัปดาห์ที่ 4</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 3: PHASE 1 HEADER -->
+  <div class="slide-container" style="padding: 64px; background: #0284c7; color: #ffffff; justify-content: center;">
+    <div style="font-size: 28px; font-weight: 700; color: #bae6fd; text-transform: uppercase; margin-bottom: 12px; letter-spacing: 1px;">
+      ระยะที่ 1 (สัปดาห์ที่ 1 / วันที่ 1 - 7)
+    </div>
+    <h1 style="font-size: 52px; font-weight: 800; line-height: 1.2; margin-bottom: 24px;">
+      เตรียมความพร้อมภายใน<br>และตั้งหลักร่วมกับสำนักปลัด
+    </h1>
+    <div style="background: rgba(255, 255, 255, 0.15); padding: 24px 32px; border-radius: 12px; border-left: 6px solid #7dd3fc; max-width: 950px;">
+      <p style="font-size: 26px; font-weight: 500; margin: 0; line-height: 1.4;">
+        <i class="fa-solid fa-bullseye" style="margin-right: 12px; color: #7dd3fc;"></i><b>เป้าหมายหลัก:</b> ทำความเข้าใจภารกิจร่วมกัน ออกคำสั่งแต่งตั้งคณะทำงาน และสำรวจทรัพยากรในพื้นที่
+      </p>
+    </div>
+  </div>
+
+  <!-- SLIDE 4: PHASE 1 DETAILS -->
+  <div class="slide-container" style="padding: 48px 64px; background: #ffffff;">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #e2e8f0; padding-bottom: 16px; margin-bottom: 32px;">
+      <h2 style="font-size: 36px; font-weight: 800; color: #0284c7; margin: 0;">
+        ระยะที่ 1: กำหนดการรายวัน (วันที่ 1 - 7)
+      </h2>
+      <span style="background: #e0f2fe; color: #0369a1; font-size: 20px; font-weight: 700; padding: 6px 16px; border-radius: 20px;">สัปดาห์ที่ 1</span>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+      <div style="background: #f8fafc; border-left: 6px solid #0284c7; border-radius: 8px; padding: 18px 24px;">
+        <div style="display: flex; align-items: center; margin-bottom: 6px;">
+          <span style="font-size: 22px; font-weight: 800; color: #0284c7; min-width: 220px;"><i class="fa-regular fa-calendar-check" style="margin-right: 8px;"></i>วันที่ 1 (วันจันทร์)</span>
+          <span style="font-size: 24px; font-weight: 700; color: #0f172a;">ประชุมภายในสำนักปลัด (ตั้งหลักและเคลียร์บทบาท)</span>
+        </div>
+        <p style="font-size: 20px; color: #475569; margin: 0 0 0 220px; line-height: 1.4;">
+          นัดประชุมหัวหน้าสำนักปลัดและเจ้าหน้าที่ | ชี้เป้านโยบาย ศบกต. ยุคใหม่ | วางบทบาทสำนักปลัดเป็น "ผู้ประสานงานหลัก"
+        </p>
+      </div>
+
+      <div style="background: #f8fafc; border-left: 6px solid #0284c7; border-radius: 8px; padding: 18px 24px;">
+        <div style="display: flex; align-items: center; margin-bottom: 6px;">
+          <span style="font-size: 22px; font-weight: 800; color: #0284c7; min-width: 220px;"><i class="fa-regular fa-calendar-check" style="margin-right: 8px;"></i>วันที่ 2 (วันอังคาร)</span>
+          <span style="font-size: 24px; font-weight: 700; color: #0f172a;">ร่างคำสั่งแต่งตั้งคณะทำงานขับเคลื่อนฯ</span>
+        </div>
+        <p style="font-size: 20px; color: #475569; margin: 0 0 0 220px; line-height: 1.4;">
+          จัดทำร่างคำสั่งแต่งตั้งคณะทำงานแบบบูรณาการ (สำนักปลัด + กองสาธารณสุขฯ + กองช่าง) เพื่อเสนอนายก อบต. ลงนาม
+        </p>
+      </div>
+
+      <div style="background: #f8fafc; border-left: 6px solid #0284c7; border-radius: 8px; padding: 18px 24px;">
+        <div style="display: flex; align-items: center; margin-bottom: 6px;">
+          <span style="font-size: 22px; font-weight: 800; color: #0284c7; min-width: 220px;"><i class="fa-regular fa-calendar-check" style="margin-right: 8px;"></i>วันที่ 3 (วันพุธ)</span>
+          <span style="font-size: 24px; font-weight: 700; color: #0f172a;">สำรวจข้อมูลพื้นฐาน (Data Baseline)</span>
+        </div>
+        <p style="font-size: 20px; color: #475569; margin: 0 0 0 220px; line-height: 1.4;">
+          รวบรวมข้อมูลปราชญ์ชาวบ้าน กลุ่มเกษตรกร และค้นหาแปลงเกษตรต้นแบบ/พื้นที่ศักยภาพในตำบล
+        </p>
+      </div>
+
+      <div style="display: flex; gap: 16px;">
+        <div style="flex: 1; background: #f8fafc; border-left: 6px solid #0284c7; border-radius: 8px; padding: 16px 20px;">
+          <div style="font-size: 20px; font-weight: 800; color: #0284c7; margin-bottom: 4px;">วันที่ 4 - 5 (พฤหัสฯ - ศุกร์)</div>
+          <div style="font-size: 22px; font-weight: 700; color: #0f172a; margin-bottom: 4px;">ประสานภาคีเครือข่ายภายนอก</div>
+          <p style="font-size: 19px; color: #475569; margin: 0;">ประสานเกษตรอำเภอ พัฒนาชุมชน และ มช. ขอความอนุเคราะห์วิทยากรพี่เลี้ยง</p>
+        </div>
+        <div style="flex: 1; background: #f8fafc; border-left: 6px solid #94a3b8; border-radius: 8px; padding: 16px 20px;">
+          <div style="font-size: 20px; font-weight: 800; color: #64748b; margin-bottom: 4px;">วันที่ 6 - 7 (เสาร์ - อาทิตย์)</div>
+          <div style="font-size: 22px; font-weight: 700; color: #0f172a; margin-bottom: 4px;">ทบทวนกรอบงาน</div>
+          <p style="font-size: 19px; color: #475569; margin: 0;">สรุปบทเรียนสัปดาห์แรกและพักผ่อนเตรียมความพร้อม</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 5: PHASE 2 HEADER -->
+  <div class="slide-container" style="padding: 64px; background: #059669; color: #ffffff; justify-content: center;">
+    <div style="font-size: 28px; font-weight: 700; color: #a7f3d0; text-transform: uppercase; margin-bottom: 12px; letter-spacing: 1px;">
+      ระยะที่ 2 (สัปดาห์ที่ 2 / วันที่ 8 - 14)
+    </div>
+    <h1 style="font-size: 52px; font-weight: 800; line-height: 1.2; margin-bottom: 24px;">
+      วางระบบโครงสร้าง<br>และคัดเลือก "ปราชญ์ชุมชน"
+    </h1>
+    <div style="background: rgba(255, 255, 255, 0.15); padding: 24px 32px; border-radius: 12px; border-left: 6px solid #6ee7b7; max-width: 950px;">
+      <p style="font-size: 26px; font-weight: 500; margin: 0; line-height: 1.4;">
+        <i class="fa-solid fa-bullseye" style="margin-right: 12px; color: #6ee7b7;"></i><b>เป้าหมายหลัก:</b> ดึงพลังจากชุมชนเข้ามาช่วยอุดช่องว่างบุคลากร และออกแบบ 4 ภารกิจหลัก
+      </p>
+    </div>
+  </div>
+
+  <!-- SLIDE 6: PHASE 2 DETAILS (DAYS 8-10) -->
+  <div class="slide-container" style="padding: 48px 64px; background: #ffffff;">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #e2e8f0; padding-bottom: 16px; margin-bottom: 28px;">
+      <h2 style="font-size: 36px; font-weight: 800; color: #059669; margin: 0;">
+        ระยะที่ 2: ดึงปราชญ์ชุมชน & ออกแบบภารกิจ (1/2)
+      </h2>
+      <span style="background: #d1fae5; color: #047857; font-size: 20px; font-weight: 700; padding: 6px 16px; border-radius: 20px;">วันที่ 8 - 10</span>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 20px;">
+      <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 24px;">
+        <div style="display: flex; align-items: center; margin-bottom: 8px;">
+          <span style="background: #059669; color: #ffffff; font-size: 20px; font-weight: 700; padding: 4px 14px; border-radius: 6px; margin-right: 16px;">วันที่ 8 (จันทร์)</span>
+          <h3 style="font-size: 26px; font-weight: 700; color: #065f46; margin: 0;">ค้นหาและเชิญ "ปราชญ์ชาวบ้าน / แกนนำเกษตรกร"</h3>
+        </div>
+        <p style="font-size: 22px; color: #166534; margin: 0; padding-left: 130px; line-height: 1.4;">
+          คัดเลือกผู้มีความรู้ด้านเกษตรอินทรีย์/ปุ๋ยหมัก และ อพ.สธ. เชิญมาเป็น <b>"พี่เลี้ยงชุมชน (Local Mentors)"</b>
+        </p>
+      </div>
+
+      <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 24px;">
+        <div style="display: flex; align-items: center; margin-bottom: 8px;">
+          <span style="background: #059669; color: #ffffff; font-size: 20px; font-weight: 700; padding: 4px 14px; border-radius: 6px; margin-right: 16px;">วันที่ 9 (อังคาร)</span>
+          <h3 style="font-size: 26px; font-weight: 700; color: #065f46; margin: 0;">ภารกิจที่ 1: งานจัดการขยะอินทรีย์เพื่อการเกษตร</h3>
+        </div>
+        <p style="font-size: 22px; color: #166534; margin: 0; padding-left: 130px; line-height: 1.4;">
+          จับมือ กองสาธารณสุขฯ กำหนดจุดสาธิตคัดแยกขยะครัวเรือน เพื่อผลิตปุ๋ยหมัก/น้ำหมักชีวภาพแจกจ่าย
+        </p>
+      </div>
+
+      <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 24px;">
+        <div style="display: flex; align-items: center; margin-bottom: 8px;">
+          <span style="background: #059669; color: #ffffff; font-size: 20px; font-weight: 700; padding: 4px 14px; border-radius: 6px; margin-right: 16px;">วันที่ 10 (พุธ)</span>
+          <h3 style="font-size: 26px; font-weight: 700; color: #065f46; margin: 0;">ภารกิจที่ 2: งานอนุรักษ์พันธุกรรมพืช (อพ.สธ.)</h3>
+        </div>
+        <p style="font-size: 22px; color: #166534; margin: 0; padding-left: 130px; line-height: 1.4;">
+          วางแนวทางสำรวจพืชพรรณท้องถิ่น และจัดทำแปลงอนุรักษ์ในพื้นที่สาธารณะ/พื้นที่ ศบกต.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 7: PHASE 2 DETAILS (DAYS 11-14) -->
+  <div class="slide-container" style="padding: 48px 64px; background: #ffffff;">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #e2e8f0; padding-bottom: 16px; margin-bottom: 28px;">
+      <h2 style="font-size: 36px; font-weight: 800; color: #059669; margin: 0;">
+        ระยะที่ 2: ออกแบบภารกิจ & สรุปแผน (2/2)
+      </h2>
+      <span style="background: #d1fae5; color: #047857; font-size: 20px; font-weight: 700; padding: 6px 16px; border-radius: 20px;">วันที่ 11 - 14</span>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 20px;">
+      <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 24px;">
+        <div style="display: flex; align-items: center; margin-bottom: 8px;">
+          <span style="background: #059669; color: #ffffff; font-size: 20px; font-weight: 700; padding: 4px 14px; border-radius: 6px; margin-right: 16px;">วันที่ 11 (พฤหัสฯ)</span>
+          <h3 style="font-size: 26px; font-weight: 700; color: #065f46; margin: 0;">ภารกิจที่ 3: งานตลาดสีเขียว (Green Market)</h3>
+        </div>
+        <p style="font-size: 22px; color: #166534; margin: 0; padding-left: 140px; line-height: 1.4;">
+          วางแผนจัดหาพื้นที่กลาง (เช่น ลาน อบต. / ตลาดชุมชน) ให้เกษตรกรอินทรีย์นำผลผลิตมาจำหน่าย
+        </p>
+      </div>
+
+      <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 24px;">
+        <div style="display: flex; align-items: center; margin-bottom: 8px;">
+          <span style="background: #059669; color: #ffffff; font-size: 20px; font-weight: 700; padding: 4px 14px; border-radius: 6px; margin-right: 16px;">วันที่ 12 (ศุกร์)</span>
+          <h3 style="font-size: 26px; font-weight: 700; color: #065f46; margin: 0;">สรุปแผนปฏิบัติการ (Action Plan) 3 เดือนแรก</h3>
+        </div>
+        <p style="font-size: 22px; color: #166534; margin: 0; padding-left: 140px; line-height: 1.4;">
+          รวมแผนทั้ง 4 ด้าน (ศบกต., อพ.สธ., ขยะอินทรีย์, ตลาดสีเขียว) เสนอนายก อบต. พิจารณาเห็นชอบ
+        </p>
+      </div>
+
+      <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px 24px;">
+        <div style="display: flex; align-items: center;">
+          <span style="background: #64748b; color: #ffffff; font-size: 20px; font-weight: 700; padding: 4px 14px; border-radius: 6px; margin-right: 16px;">วันที่ 13-14 (เสาร์-อาทิตย์)</span>
+          <h3 style="font-size: 24px; font-weight: 700; color: #334155; margin: 0;">พักผ่อนทบทวนงานประจำสัปดาห์</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 8: PHASE 3 HEADER -->
+  <div class="slide-container" style="padding: 64px; background: #d97706; color: #ffffff; justify-content: center;">
+    <div style="font-size: 28px; font-weight: 700; color: #fde68a; text-transform: uppercase; margin-bottom: 12px; letter-spacing: 1px;">
+      ระยะที่ 3 (สัปดาห์ที่ 3 / วันที่ 15 - 21)
+    </div>
+    <h1 style="font-size: 52px; font-weight: 800; line-height: 1.2; margin-bottom: 24px;">
+      เปิดตัวโครงการ<br>และสร้างการมีส่วนร่วม
+    </h1>
+    <div style="background: rgba(255, 255, 255, 0.15); padding: 24px 32px; border-radius: 12px; border-left: 6px solid #fcd34d; max-width: 950px;">
+      <p style="font-size: 26px; font-weight: 500; margin: 0; line-height: 1.4;">
+        <i class="fa-solid fa-bullseye" style="margin-right: 12px; color: #fcd34d;"></i><b>เป้าหมายหลัก:</b> ประชาสัมพันธ์โครงการ สื่อสารกับประชาชน และเตรียมจัดกิจกรรม Kick-off
+      </p>
+    </div>
+  </div>
+
+  <!-- SLIDE 9: PHASE 3 DETAILS -->
+  <div class="slide-container" style="padding: 48px 64px; background: #ffffff;">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #e2e8f0; padding-bottom: 16px; margin-bottom: 32px;">
+      <h2 style="font-size: 36px; font-weight: 800; color: #d97706; margin: 0;">
+        ระยะที่ 3: เตรียมความพร้อม Kick-off (วันที่ 15 - 21)
+      </h2>
+      <span style="background: #fef3c7; color: #b45309; font-size: 20px; font-weight: 700; padding: 6px 16px; border-radius: 20px;">สัปดาห์ที่ 3</span>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+      <div style="background: #fffbeb; border-left: 6px solid #d97706; border-radius: 8px; padding: 18px 24px;">
+        <div style="display: flex; align-items: center; margin-bottom: 6px;">
+          <span style="font-size: 22px; font-weight: 800; color: #d97706; min-width: 240px;"><i class="fa-solid fa-bullhorn" style="margin-right: 8px;"></i>วันที่ 15 (วันจันทร์)</span>
+          <span style="font-size: 24px; font-weight: 700; color: #0f172a;">ประชาสัมพันธ์เชิงรุกทุกช่องทาง</span>
+        </div>
+        <p style="font-size: 20px; color: #475569; margin: 0 0 0 240px; line-height: 1.4;">
+          สำนักปลัดออกประกาศ หอกระจายข่าว และสื่อออนไลน์ เชิญชวนประชาชนร่วมโครงการ ศบกต. และตลาดสีเขียว
+        </p>
+      </div>
+
+      <div style="background: #fffbeb; border-left: 6px solid #d97706; border-radius: 8px; padding: 18px 24px;">
+        <div style="display: flex; align-items: center; margin-bottom: 6px;">
+          <span style="font-size: 22px; font-weight: 800; color: #d97706; min-width: 240px;"><i class="fa-solid fa-tools" style="margin-right: 8px;"></i>วันที่ 16-17 (อังคาร-พุธ)</span>
+          <span style="font-size: 24px; font-weight: 700; color: #0f172a;">เตรียมสถานที่และวัสดุอุปกรณ์</span>
+        </div>
+        <p style="font-size: 20px; color: #475569; margin: 0 0 0 240px; line-height: 1.4;">
+          ปรับปรุงพื้นที่ ศบกต. / แปลงสาธิต / จุดคัดแยกขยะ ให้พร้อมสำหรับการจัดกิจกรรมจริง
+        </p>
+      </div>
+
+      <div style="background: #fffbeb; border-left: 6px solid #d97706; border-radius: 8px; padding: 18px 24px;">
+        <div style="display: flex; align-items: center; margin-bottom: 6px;">
+          <span style="font-size: 22px; font-weight: 800; color: #d97706; min-width: 240px;"><i class="fa-solid fa-users-gear" style="margin-right: 8px;"></i>วันที่ 18 (วันพฤหัสฯ)</span>
+          <span style="font-size: 24px; font-weight: 700; color: #0f172a;">ประชุมซักซ้อมบทบาทคณะทำงาน</span>
+        </div>
+        <p style="font-size: 20px; color: #475569; margin: 0 0 0 240px; line-height: 1.4;">
+          นัดหมายคณะทำงานบูรณาการและปราชญ์ชาวบ้าน ซักซ้อมลำดับขั้นตอนการจัดงาน (Run-through)
+        </p>
+      </div>
+
+      <div style="display: flex; gap: 16px;">
+        <div style="flex: 1; background: #fffbeb; border-left: 6px solid #d97706; border-radius: 8px; padding: 16px 20px;">
+          <div style="font-size: 20px; font-weight: 800; color: #d97706; margin-bottom: 4px;">วันที่ 19 (วันศุกร์)</div>
+          <div style="font-size: 22px; font-weight: 700; color: #0f172a; margin-bottom: 4px;">ตรวจความเรียบร้อยโค้งสุดท้าย</div>
+          <p style="font-size: 19px; color: #475569; margin: 0;">ตรวจสอบสถานที่ อุปกรณ์ และลำดับงานก่อน Kick-off</p>
+        </div>
+        <div style="flex: 1; background: #f8fafc; border-left: 6px solid #94a3b8; border-radius: 8px; padding: 16px 20px;">
+          <div style="font-size: 20px; font-weight: 800; color: #64748b; margin-bottom: 4px;">วันที่ 20 - 21 (เสาร์ - อาทิตย์)</div>
+          <div style="font-size: 22px; font-weight: 700; color: #0f172a; margin-bottom: 4px;">พักผ่อนเตรียมพร้อมวันจริง</div>
+          <p style="font-size: 19px; color: #475569; margin: 0;">เตรียมความพร้อมร่างกายและจิตใจก่อนเปิดงานสัปดาห์หน้า</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 10: PHASE 4 HEADER -->
+  <div class="slide-container" style="padding: 64px; background: #7c3aed; color: #ffffff; justify-content: center;">
+    <div style="font-size: 28px; font-weight: 700; color: #ddd6fe; text-transform: uppercase; margin-bottom: 12px; letter-spacing: 1px;">
+      ระยะที่ 4 (สัปดาห์ที่ 4 / วันที่ 22 - 30)
+    </div>
+    <h1 style="font-size: 52px; font-weight: 800; line-height: 1.2; margin-bottom: 24px;">
+      จัดกิจกรรม Kick-off<br>และประเมินผลรอบเดือนแรก
+    </h1>
+    <div style="background: rgba(255, 255, 255, 0.15); padding: 24px 32px; border-radius: 12px; border-left: 6px solid #c4b5fd; max-width: 950px;">
+      <p style="font-size: 26px; font-weight: 500; margin: 0; line-height: 1.4;">
+        <i class="fa-solid fa-bullseye" style="margin-right: 12px; color: #c4b5fd;"></i><b>เป้าหมายหลัก:</b> เริ่มต้นปฏิบัติจริง นำเสนอผลงานต่อที่ประชุม และถอดบทเรียนเพื่อปรับปรุง
+      </p>
+    </div>
+  </div>
+
+  <!-- SLIDE 11: PHASE 4 DETAILS -->
+  <div class="slide-container" style="padding: 48px 64px; background: #ffffff;">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #e2e8f0; padding-bottom: 16px; margin-bottom: 28px;">
+      <h2 style="font-size: 36px; font-weight: 800; color: #7c3aed; margin: 0;">
+        ระยะที่ 4: ปฏิบัติจริง & นำเสนอผลงาน (วันที่ 22 - 30)
+      </h2>
+      <span style="background: #ede9fe; color: #6d28d9; font-size: 20px; font-weight: 700; padding: 6px 16px; border-radius: 20px;">สัปดาห์ที่ 4</span>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+      <div style="background: #f5f3ff; border: 1px solid #ddd6fe; border-radius: 10px; padding: 18px 24px;">
+        <div style="display: flex; align-items: center; margin-bottom: 4px;">
+          <span style="background: #7c3aed; color: #ffffff; font-size: 18px; font-weight: 700; padding: 4px 12px; border-radius: 6px; margin-right: 14px;">วันที่ 22 (จันทร์)</span>
+          <h3 style="font-size: 24px; font-weight: 700; color: #5b21b6; margin: 0;">Kick-off "ศบกต. ข่วงเปายุคใหม่" (เปิดตัวเป็นทางการ)</h3>
+        </div>
+        <p style="font-size: 20px; color: #4c1d95; margin: 0; padding-left: 124px; line-height: 1.4;">
+          เปิดศูนย์ฯ | อบรมการทำปุ๋ยหมักจากขยะ | เปิดตลาดสีเขียววันแรก | เริ่มกิจกรรม อพ.สธ.
+        </p>
+      </div>
+
+      <div style="background: #f5f3ff; border: 1px solid #ddd6fe; border-radius: 10px; padding: 18px 24px;">
+        <div style="display: flex; align-items: center; margin-bottom: 4px;">
+          <span style="background: #7c3aed; color: #ffffff; font-size: 18px; font-weight: 700; padding: 4px 12px; border-radius: 6px; margin-right: 14px;">วันที่ 23-26 (อ.-ศ.)</span>
+          <h3 style="font-size: 24px; font-weight: 700; color: #5b21b6; margin: 0;">ติดตามการดำเนินงานและรวบรวมข้อมูล</h3>
+        </div>
+        <p style="font-size: 20px; color: #4c1d95; margin: 0; padding-left: 124px; line-height: 1.4;">
+          ทีมสำนักปลัดลงพื้นที่เก็บภาพผลความสำเร็จ ถ่ายภาพกิจกรรม และรวบรวมข้อเสนอแนะจากชาวบ้าน
+        </p>
+      </div>
+
+      <div style="background: #f5f3ff; border: 2px solid #7c3aed; border-radius: 10px; padding: 18px 24px;">
+        <div style="display: flex; align-items: center; margin-bottom: 4px;">
+          <span style="background: #5b21b6; color: #ffffff; font-size: 18px; font-weight: 700; padding: 4px 12px; border-radius: 6px; margin-right: 14px;">วันที่ 27-28 (จ.-อ.)</span>
+          <h3 style="font-size: 24px; font-weight: 700; color: #5b21b6; margin: 0;">สรุปผลงาน & นำเสนอในที่ประชุมประจำเดือน</h3>
+        </div>
+        <p style="font-size: 20px; color: #4c1d95; margin: 0; padding-left: 124px; line-height: 1.4;">
+          กรอกแบบรายงานผลฯ ตามแบบท่านนายกฯ และนำเสนอสรุปต่อที่ประชุมเจ้าหน้าที่ประจำเดือน
+        </p>
+      </div>
+
+      <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 10px; padding: 16px 24px;">
+        <div style="display: flex; align-items: center;">
+          <span style="background: #64748b; color: #ffffff; font-size: 18px; font-weight: 700; padding: 4px 12px; border-radius: 6px; margin-right: 14px;">วันที่ 29-30 (พ.-พฤ.)</span>
+          <h3 style="font-size: 22px; font-weight: 700; color: #334155; margin: 0;">ถอดบทเรียน (Lessons Learned) และวางแผนเดือนถัดไป</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 12: SUMMARY & CLOSING -->
+  <div class="slide-container" style="padding: 64px; justify-content: center; align-items: center; text-align: center; background: linear-gradient(135deg, #064e3b 0%, #022c22 100%); color: #ffffff;">
+    <i class="fa-solid fa-circle-check" style="font-size: 72px; color: #34d399; margin-bottom: 24px;"></i>
+    <h1 style="font-size: 52px; font-weight: 800; margin: 0 0 20px 0;">
+      พร้อมขับเคลื่อนเพื่อชาวตำบลข่วงเปา
+    </h1>
+    <p style="font-size: 28px; color: #a7f3d0; max-width: 900px; line-height: 1.4; margin: 0 0 32px 0;">
+      "บูรณาการการทำงาน ร่วมใจพัฒนาเกษตรกรรมยั่งยืน"
+    </p>
+    <div style="background: rgba(255, 255, 255, 0.1); padding: 16px 36px; border-radius: 50px; border: 1px solid rgba(255, 255, 255, 0.2);">
+      <span style="font-size: 24px; font-weight: 600; color: #ffffff;">ขอบคุณครับ | องค์การบริหารส่วนตำบลข่วงเปา</span>
+    </div>
+  </div>
+
+</body>
+</html>
